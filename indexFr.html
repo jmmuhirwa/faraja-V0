@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial scale=1.0">
+   
+   <title>E-Learning Design Inspired by Pedagogy, Driven by Technology</title>
+   <link rel="stylesheet" href="faraja.css" media="all"/>
+   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  
+ <style>
+
+ @media only screen and (min-width:320px){
+   
+   body{
+background-image: url(images/cloud.jpg);
+display: flex;
+flex-direction: column;
+width: auto;
+height: auto;
+margin: auto;
+align-items: center;
+flex-wrap: wrap;
+
+}
+
+.title{
+   font-size: .8em;
+}
+      .welcome{
+         display: flex;
+         flex-direction:column;
+         justify-content:center;
+         align-items: center;
+         padding: 7em;
+         border-radius: 20px;
+         background-image:linear-gradient(to bottom, white, olive);
+     font-size: .9em;
+         opacity: .8;
+      }
+      .title{
+            background: green; text-align: center;
+ }
+ 
+ .solitude{
+   font-size: 1.2em;
+   font-weight: bold;
+ }
+ 
+  .bienvenue{
+   text-align: center;
+   }
+ 
+ }
+ 
+ 
+@media only screen and (min-width:768px){
+   
+   body{
+      background-image:url(images/cloud.jpg);
+    width: auto;
+    height: auto;
+    margin: auto;
+   }
+         .welcome{
+         display: flex;
+         flex-direction:column;
+         justify-content:center;
+         align-items: center;
+         padding: 7em;
+         border-radius: 20px;
+         background-image:linear-gradient(to bottom, white,green);
+
+         opacity: .8;
+      }
+        .title{
+            background:#669999; text-align: center;
+ }
+ 
+  .solitude{
+   font-size: 1.6em;
+}
+}
+   @media only screen and (min-width:980px){
+      body{
+         background-image:url(images/cloud.jpg);
+             width: auto;
+         height: auto;
+   
+          
+      }
+      
+      .welcome{
+         display: flex;
+         flex-direction:column;
+         justify-content:center;
+         align-items: center;
+
+         border-radius: 20px;
+         background-image:linear-gradient(to bottom, white, #666666);
+         opacity: .7;
+      }
+      
+      .title{
+            background:#595959;text-align: center;
+ }
+  .solitude{
+   font-size: 2.2em;
+   }
+   
+   img{
+      display: flex;
+               flex-direction:column;
+         justify-content:center;
+         align-items: center;
+   }
+   }
+ </style> 
+  
+    
+</head>
+
+<body>
+     
+   <div class="welcome">
+      
+      <img src="images/logoFrBlk.png" alt="faraja logo" style="background:white; padding: 20px;border-radius: 15px;margin-bottom: 1em">
+
+      <div class="title" style="color:white;font-size: 1.2em; margin-bottom: auto; border: 2px dotted white; border-radius: 10px; padding: 1em">R&Eacute;SIDE L'APPRENTISSAGE DE QUALIT&Eacute;</div>
+
+
+    
+ 
+       <div id="bienvenue" style="font-size: 1.2em; color:white; border-radius: 10px; padding:2em; border: 2px dotted white; line-height: 1.5em">
+  
+
+         
+      <p id="langselect" style="padding: 1em; margin-top: 1em">
+
+     <select id="selectLanguage" onchange="goToPage('selectLanguage')">
+
+       <option>Choisissez une langue</option>
+       <option value="apropos.html">FRAN&Ccedil;AIS</option>
+       <option value="about.html">ENGLISH</option>
+
+     </select>
+     
+              <p id="bienve" style="text-align: right; font-weight: bold;font-size: 1.5em; color:#fff">BIENVENUE!</p>
+      </p>
+        
+  </div>
+      </div>
+      
+   
+  <div>
+   
+ 
+     <script src="lang.js"></script>
+   </div>
+ 
+
+</body>
+</html>
+

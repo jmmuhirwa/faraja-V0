@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial scale=1.0">
+   
+   <title>E-Learning Design Inspired by Pedagogy, Driven by Technology</title>
+   <link rel="stylesheet" href="faraja.css" media="all"/>
+   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  
+ <style>
+
+
+@media all and (min-width:768px){
+  
+  html{
+   padding: 5em;
+}
+   
+   body{
+   background-image:url(images/cloud.jpg);
+    width: auto;
+    height: auto;
+    margin: auto;
+   }
+         .welcome{
+         display: flex;
+         flex-direction:column;
+         justify-content:center;
+         align-items: center;
+         padding: 7em;
+         border-radius: 20px;
+         background-image:linear-gradient(to bottom, white,green);
+
+         opacity: .8;
+      }
+        .title{
+            background:#669999; text-align: center;
+ }
+ 
+  .solitude{
+   font-size: 1.6em;
+}
+}
+/***************************************************************************************************************/
+   @media all and (max-width:768px){
+      html{
+   padding: 5em;
+}
+      body{
+         background-image:url(images/cloud.jpg);
+             width: 70%;
+height: 100%;
+          
+      }
+      
+      .welcome{
+         display: flex;
+         flex-flow:column wrap;
+         justify-content:center;
+         align-items: center;
+
+         border-radius: 20px;
+         background-image:linear-gradient(to bottom, white, #666666);
+
+         opacity: .7;
+      }
+      
+      .title{
+            background:#595959;text-align: center;
+ }
+  .solitude{
+   font-size: 2.2em;
+   }
+   
+   img{
+      display: flex;
+               flex-direction:column;
+         justify-content:center;
+         align-items: center;
+   }
+   }
+ </style> 
+  
+    
+</head>
+
+<body>
+     
+   <div class="welcome">
+      
+      <img src="images/logoEngBlk.png" alt="faraja logo" style="background:white; padding: 20px;border-radius: 15px;margin-bottom: 1em">
+
+      <div class="title" style="color:white;font-size: 1.2em; margin-bottom: auto; border: 2px dotted white; border-radius: 10px; padding: 1em">QUALITY LEARNING OCCURS </div>
+
+
+    
+ 
+       <div id="bienvenue" style="font-size: 1.2em; color:white; border-radius: 10px; padding:2em; border: 2px dotted white; line-height: 1.5em">
+  
+      
+      <p id="langselect" style="padding: 1em; margin-top: 1em">
+
+     <select id="selectLanguage" onchange="goToPage('selectLanguage')">
+
+       <option>   ENGLISH | FRAN&Ccedil;AIS</option>
+       <option value="about_eng.html">ENGLISH</option>
+       <option value="about_fr.html">FRAN&Ccedil;AIS </option>
+
+     </select>
+     
+     
+      </p>
+      
+      <p id="bienve" style="text-align: right; font-weight: bold;font-size: 1.5em; color:#fff">Welcome!</p>
+
+      
+  </div>
+      </div>
+      
+   
+  <div>
+   
+ 
+     <script src="lang.js"></script>
+   </div>
+ 
+
+</body>
+</html>
+
